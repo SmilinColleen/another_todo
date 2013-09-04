@@ -4,9 +4,7 @@
   <ol>
     <% @todos.each do |todo| %>
       <% if todo.list_name == list %>
-        <li>
-          <%= link_to "#{todo.title}: #{todo.body}", todo %>
-        </li>
+        <li><%= link_to "#{todo.title}: #{todo.body}", todo %></li>
       <% end %>
     <% end %>
   </ol>
